@@ -1,0 +1,3 @@
+function mobileView(view){const workspace=document.getElementById('workspace');if(!workspace)return;workspace.dataset.mobileView=view;['map','study','library'].forEach(name=>{const b=document.getElementById('mobile-'+name);if(b){b.classList.toggle('active',name===view);b.setAttribute('aria-current',name===view?'page':'false')}});if(window.matchMedia('(max-width:700px)').matches)window.scrollTo({top:0,behavior:'instant'})}
+mobileView('map');const originalSelect=select;select=function(index){originalSelect(index);if(window.matchMedia('(max-width:700px)').matches)mobileView('study')};
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(error=>console.warn('Offline support unavailable:',error)))}
