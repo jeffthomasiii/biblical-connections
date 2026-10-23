@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Biblical Connections — Scripture Atlas",
+  "short_name": "Biblical Connections",
+  "description": "Interactive Scripture connections with contextual biblical study.",
+  "start_url": "./#/explore/tree-of-life",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#070f12",
+  "theme_color": "#070f12",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
